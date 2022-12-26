@@ -4,6 +4,8 @@
 
 To put into practice the skills learned over your first year of studies.
 
+git test
+
 ## Brief
 You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
 -	Home page
