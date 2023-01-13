@@ -1,0 +1,63 @@
+
+
+
+@media(max-width:750px) {
+
+    /* the hamburger menu to apear */
+    .heading h4 a{
+      
+        font-size:large ;
+        font-weight: 700;
+        letter-spacing:2px;
+      
+    }
+        .hamburger{display: block;}
+    
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .nav-links{
+            position: fixed;
+            left:-100%;
+            top:70px;
+            gap:0;
+            flex-direction: column;
+            background-color: #fff;
+            width:100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+    
+        .nav-links li{
+            margin: 16px 0;
+        }
+    
+        .nav-links.active{
+            left:0;
+        }
+
+
+.about-title{
+    text-transform: uppercase;
+    text-align: center;
+
+ font-size: 30px;
+     font-family: poppins;
+     font-weight: 700;
+  
+  
+     border:2px solid green;
+
+  }
+    }
+    
+    
+    
+    

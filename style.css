@@ -1,0 +1,38 @@
+ 
+ 
+
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;700;900&display=swap');
+ @import "/css/imports/hamburger.css";
+ @import "/css/imports/navbar.css";
+ @import "/css/imports/main.css";
+ @import "/css/imports/apistyle.css";
+@import "/css/imports/footer.css";
+@import "/css/imports/mediaQuery.css";
+@import "/css/imports/about.css";
+
+ 
+
+* {
+padding:0;
+margin:0;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+h1{color:#2D465D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
