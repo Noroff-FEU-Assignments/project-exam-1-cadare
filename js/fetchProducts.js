@@ -1,16 +1,20 @@
-const url = "https://sookoob.com/wp-json/wp/v2/posts?"
+const url = "https://sookoob.com/wp-json/wp/v2/posts?_embed&per_page=100"
 
 console.log(url)
 
-const productContainer = document.querySelector('.productPage');
-
+// const productContainer = document.querySelector('.productPage');
+let loadMoreBtn = document.querySelector('#load-more-btn');
 
 async function getProducts(url) {
     const response = await fetch(url);
     const products = await response.json();
     console.log(products)
 
-    displayProducts(products)
+    let newArr = displayProducts(products)
+    console.log(newArr)
+
+
+
 
 }
 
@@ -21,6 +25,9 @@ function displayProducts(products) {
 
 
     products.forEach(function (product) {
+
+
+
         productContainer.innerHTML +=
 
             ` 
@@ -28,22 +35,35 @@ function displayProducts(products) {
         <a href="postDetail.html?id=${product.id}" class="card_fetch">
     
   
-        <h1 class="title">${product.title.rendered}<h1/>
+
+        
+        <h1 class="title-api">${product.title.rendered}<h1/>
       
-       
+           
+        <div class="product-images" 
+        style="background-image: url('${product.better_featured_image
+            .source_url}')"></div>
         
         <p class="paragrapy">${product.excerpt.rendered}<p/>
         
        </a>  
        
-         
-         <div class="product-images" 
-         style="background-image: url('${product.better_featured_image
-             .source_url}')"></div>
+     
 
              </div>  
          `
 
 
+
+
+
+
     })
+
+
+
+
+
+
+
 }

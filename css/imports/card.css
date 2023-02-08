@@ -1,57 +1,58 @@
-/* .card {
+
+
+
+.container-carousel{
+
+min-height: 500px;
+
+border:1px solid red;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.wrapper {
+    height: 500px;
+    width: 780px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border:1px solid red;
+    
+  
+  }
+  
+  .button-wrapper {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    max-width: 300px;
-    margin: 1rem;
-    border-radius: 1rem;
-    text-decoration: none;
-}
-
-.card a.details {
-    margin-top: 0.5em;
-    background-color: var(--grey) !important;
-    color: white !important;
-}
-
-.card a.details:hover {
-    background-color: var(--light-grey) !important;
-    color: var(--grey) !important;
-}
-
-.card div.details {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1.25rem;
-    background: white;
-}
-
-.name {
-    font-size: 16px;
-    margin-bottom: 0.75rem;
-    color: var(--grey);
-    font-weight: bold;
-}
-*/
-/* .details-image{
-    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .carousel {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     width: 100%;
-    background-size: cover;
-    background-position: center top;
-    object-fit: cover;
-} 
-
- 
-.card {
-    width:320px;
-    background-color: #fff;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-   margin:0 auto;
-   padding-bottom: 20px; 
-}
-
- .image {
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+  }
+  
+  .card {
+    background: black;
+    min-width: 300px;
     height: 300px;
+    margin-right: 1rem;
+    display: inline-block;
+  }
+
+
+  .card img{
+    height: 100%;
     width: 100%;
-    object-fit: cover;
-}  */
+  }

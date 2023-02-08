@@ -38,19 +38,25 @@ fetchProduct();
 
 
 
+
+
+
+
 function createHtml(detail) {
 
     detailContainer.innerHTML = ` <div class="mainDetail detailItems">
-    <h1 class="title">${detail.title.rendered}</h1>
-    
+    <h1 class="title-api">${detail.title.rendered}</h1>
     <div class="details-image" 
     style="background-image: url('${detail.better_featured_image
-        .source_url}')"></div>
+        .source_url}')">
+        </div>
+       
+        <p>${detail.date}</p>
 
     
   
     <p>${detail.content.rendered}</p>
-    <p>${detail.date}</p>
+   
  
                                </div>
                                </div>

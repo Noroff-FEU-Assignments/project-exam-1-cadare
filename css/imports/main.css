@@ -2,6 +2,7 @@
 /* index page main */
 
 .main{
+ 
     min-height: calc(100vh - 100px - 58px );
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -16,13 +17,15 @@
 
 /* The first box for image and text scroll menu */
 .main-box{
-
+    margin-top: 1rem;
  
    min-height:30rem;
-   max-width: 800px;
+
+   /* border:2px solid red; */
     /* padding: 0 30px; */
   
     padding:1.5rem;
+    
 /* border:2px solid red; */
 
    

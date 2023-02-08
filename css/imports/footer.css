@@ -11,8 +11,9 @@ footer{
 
 /* Heart icon on footer google icons */
 .material-symbols-outlined {
-color:rgb(255, 0, 0);
-vertical-align: -9px;
+color:var(--logo-hart);
+
+vertical-align: -7px;
 font-size: 20px;
 }
 
